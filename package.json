@@ -2,10 +2,10 @@
   "name": "tech-blog",
   "version": "1.0.0",
   "description": "A blogging website built with Node.js, express-session, Sequelize ORM, MysQL and MVC paradigm folder structure.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
+    "start": "node app.js",
     "seed": "node seeds/index.js"
   },
   "repository": {
