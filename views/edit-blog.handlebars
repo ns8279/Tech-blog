@@ -5,18 +5,18 @@
         Edit Blog
     </h2>
 
-   <form> 
-  <div class="form-group">
-    <input type="text" class="form-control" id="post-title" name = "post-title" value = "{{post.title}}">
-  </div>
-  <div class="form-group">
-     <div class="card-body">
-        <p class="card-text text-white">{{post_text}}</p>
-        <a href="/post/{{id}}" class="btn btn-primary">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-        <button type = "submit" class = "btn btn-primary">Save</button>
-        <button type ="button" class ="btn btn-primary delete-post-btn">Delete</button>
+<form class ="edit-post-form"> 
+    <div class="form-group edit-post-form">
+      <input type="text" class="form-control edit-post-form" id="post-title" name = "post-title" value = "{{post.title}}">
     </div>
-  </div>
+    <div class ="edit-post-form">
+      <div class="card-body edit-post-form">
+          <p class="card-text text-white">{{post_text}}</p>
+          <a href="/post/{{id}}" class="btn btn-primary">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+          <button type = "submit" class = "btn btn-primary" id ="save">Save</button>
+          <button type ="button" class ="btn btn-primary delete-post-btn">Delete</button>
+      </div>
+    </div>
 </form>
 </article>
 
