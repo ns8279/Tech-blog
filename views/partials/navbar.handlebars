@@ -8,11 +8,9 @@
       <li class="nav-item ">
         <a class="nav-link" href="/">Home </a>
       </li>
-      <li class="nav-item text-white">
-        <a class="nav-link" href="#">Dashboard</a>
-      </li>
-      <li class="nav-item"> 
+      <li class="nav-item text-white"> 
         {{#if loggedIn}}
+        <a class="nav-link" href="/dashboard">Dashboard</a>
         <button id ="logout" class =" btn-primary float-right">logout</button>   
         {{else}} 
         <a class="nav-link" href="/login">Login</a>

@@ -28,11 +28,11 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-//==== public folder static files ============
+//==== public folder static files ===================================
 app.use(express.static(path.join(__dirname, 'public')));
-//======== session path ==============================================
+//======== session path =============================================
 app.use(session(sess));
-//=== handlebars ========================
+//=== handlebars ====================================================
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
